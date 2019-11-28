@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title></title>
+    <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    </style>
+  </head>
+  
+  <body>
+
+    <h2>This is the store page</h2>
+    <a href="home.html">Click Me</a>
+
+    <div class="card">
+      <img src={{products[0].link}} alt="Denim Jeans" style="width:100%">
+      <h1>{{products[0].name}}</h1>
+      <p class="price">{{products[0].price}}</p>
+      <p>{{products[0].description}}</p>
+      <p><button a href = "{{url_for('/add_to_cart/current')}}", current = {{products[0].id}}>Add to Cart</button></p>
+     <!-- <p><button onclick = {{add}}>Add to Cart</button></p> -->
+
+    </div>
+    <br><br>
+   
+
+    <!--
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/1627/0171/products/2_02c510fe-ad71-4abb-b922-4cd762c44357_grande.jpg?v=1571749406" alt="Denim Jeans" style="width:100%">
+      <h1>Jeans</h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <br><br>
+
+    <div class="card">
+      <img src="https://lp2.hm.com/hmgoepprod?set=source[/fd/e2/fde23678d24507c5d59e5f1069c4323aa5052fc9.jpg],origin[dam],category[men_jeans_skinny],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]" alt="Denim Jeans" style="width:100%">
+      <h1>More Jeans</h1>
+      <p class="price">$-19.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <br><br>
+
+    <div class="card">
+      <img src="https://images.express.com/is/image/expressfashion/0091_07096729_0058?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon" alt="Denim Jeans" style="width:100%">
+      <h1>Yes , more Jeans</h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <br><br>
+
+    <div class="card">
+      <img src="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/dg2-by-diane-gilman-virtual-stretch-skinny-jean-d-20180404083443147~560464_V3X.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>And More Jeans</h1>
+      <p class="price">$19.99</p>
+      <p>Some text about the jeans..</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    -->
+  </body>
+</html>
